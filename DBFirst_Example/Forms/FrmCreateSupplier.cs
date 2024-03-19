@@ -1,0 +1,31 @@
+﻿using DBFirst_Example.Models;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace DBFirst_Example.Forms;
+public partial class FrmCreateSupplier : Form
+{
+    public FrmCreateSupplier()
+    {
+        InitializeComponent();
+    }
+
+    private void btnCreate_Click(object sender, EventArgs e)
+    {
+        NorthwndContext db= new NorthwndContext();
+        Supplier supplier = new Supplier();
+        supplier.CompanyName=txtCompanyName.Text.Trim();
+        supplier.ContactName=txtContactName.Text.Trim();
+        supplier.ContactTitle=txtContactTitle.Text.Trim();
+        db.Suppliers.Add(supplier);
+        db.SaveChanges();
+        MessageBox.Show("Supplier added succesfully");
+    }
+}
