@@ -4,10 +4,22 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Frm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FrmAddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FrmAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FrmAddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FrmCategories.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\FrmCreateSupplier.cs">

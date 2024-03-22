@@ -189,7 +189,7 @@ partial class FrmSuppliers
         Controls.Add(btnOrderByCompanyName);
         Controls.Add(dtGridSuppliers);
         Name = "FrmSuppliers";
-        Text = "FrmAddSupplier";
+        Text = "FrmSuppliers";
         Load += FrmSuppliers_Load;
         ((System.ComponentModel.ISupportInitialize)dtGridSuppliers).EndInit();
         ResumeLayout(false);
